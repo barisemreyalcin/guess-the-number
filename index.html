@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <title>Guess The Number</title>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <img id="logo" src="img/logo.png" alt="Logo">
+            <h1 id="title">Guess The Number!</h1>
+            <p>Between 1 - 20</p>
+        </div>
+    </header>
+    <main>
+        <div class="container main-container">
+            <p id="secret-number" class="number-box">?</p>
+            <p id="message">▶ Start guessing...</p>
+            <input id="guess" type="number" placeholder="👀" class="number-box">
+            <div class="btn-group">
+                <button class="btn check">Check</button>
+                <button class="btn restart">Restart</button>
+            </div>
+            <div class="score-table">
+                <p>🎯 Score: <span id="score">20</span></p>
+                <p>🏆 Highest Score: <span id="highest-score">0</span></p>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

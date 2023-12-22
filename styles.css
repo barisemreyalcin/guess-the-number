@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    margin: 0;
+    height: 100vh;
+    font-family: 'VT323', monospace;
+    background: linear-gradient(to top, #5E3ACE, #321982);
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: #F4F4F6;
+    padding: .5em 0;
+    color: #321982;
+}
+
+h1 {
+    font-size: 4.5rem;
+    font-weight: 400;
+}
+
+#logo {
+    width: 80px;
+}
+
+header p {
+    font-size: 2.2rem;
+}
+
+main {
+    color: #F4F4F6;
+    padding-top: 3.5em;
+}
+
+.number-box {
+    background-color: rgb(31, 31, 31);
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 2px solid #F4F4F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#secret-number {
+    width: 100px;
+    height: 100px;
+    font-size: 4.5rem;
+}
+
+#message {
+    text-align: center;
+    font-size: 2.8rem;
+}
+
+#guess {
+    width: 100px;
+    height: 50px;
+    background-color: #F4F4F6;
+    color: #321982;
+    text-align: center;
+    padding-left: .5em;
+    border: 2px solid rgb(31, 31, 31);
+    font-family: inherit;
+    font-size: 3.3rem;
+}
+
+#guess::placeholder {
+    opacity: .4;
+    color: #321982;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin-top: 2em;
+    width: 100%;
+}
+
+button {
+    font-family: 'VT323', monospace;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    font-size: 2.2rem;
+    padding: .5em 1em;
+    cursor: pointer;
+    color: #F4F4F6;
+    border: 1px solid #F4F4F6;
+}
+
+button.restart {
+    background-color: rgb(255, 98, 0);
+}
+
+button.check {
+    background-color: #321982;
+}
+
+.score-table {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+}
+
+.score-table p {
+    font-size: 3.2rem;
+    margin-bottom: 0;
+}
+
+/* Media Queries */
+@media(max-width: 768px) {
+    html {
+        font-size: 8.5px;
+    }
+}
+
+@media(max-width: 576px) {
+    html {
+        font-size: 8px;
+    }
+
+    .header-container {
+        flex-direction: column;
+    }
+
+    .header-container p {
+        margin: 0;
+    }
+
+    h1 {
+        margin: .25em 0;
+    }
+
+    #logo {
+        width: 70px;
+    }
+
+    main {
+        padding: 1.5em 0;
+    }
+
+    .score-table {
+        flex-direction: column;
+        gap: .5em;
+        margin-top: .5em;
+    }
+
+    .score-table p {
+        margin-top: 0;
+        font-size: 2rem;
+    }
+}
